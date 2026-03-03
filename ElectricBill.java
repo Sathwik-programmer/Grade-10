@@ -11,6 +11,7 @@ class ElectricBill
         n=sc.nextLine();
         System.out.println("Enter the number of units consumed:");
         unit=sc.nextInt();
+        sc.close();
     }
     void calculate()
     {
@@ -40,5 +41,5 @@ class ElectricBill
         obj.calculate();
         obj.display();
     }
-    sc.close();
+   
 }
