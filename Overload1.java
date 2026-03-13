@@ -3,13 +3,13 @@ public class Overload1
 {
     int w,charge;
     String name;
-    void call(int a,int b,String c){
+    void call(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter weight "+w);
         w=sc.nextInt();
         System.out.println("Enter name "+name);
         name=sc.next();
-        sc.close();
+        
     }   
     void calculate()
     {
@@ -41,7 +41,7 @@ public class Overload1
         }
         public static void main(String[] args) {
             Overload1 o=new Overload1();
-            o.call(6, 100, "John");
+            o.call();
             o.calculate();
             o.print();
         }
